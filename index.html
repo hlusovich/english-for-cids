@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>English for kids</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://pgjndpcilbcanlnhhjmhjalilcmoicjc/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/mainPage/books.png" type="image/x-icon">
+    <title>English for kids</title>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="header-inner">
+        <div class="header__menu">
+            <div class="header__menu-line">
+                <div class="header__menu-line-long purple"></div>
+                <div class="header__menu-line-short yellow"></div>
+            </div>
+            <div class="header__menu-line">
+                <div class="header__menu-line-short pink"></div>
+                <div class="header__menu-line-long yellow"></div>
+            </div>
+            <div class="header__menu-line">
+                <div class="header__menu-line-long pink"></div>
+                <div class="header__menu-line-short purple"></div>
+            </div>
+        </div>
+        <div class="switch-buttons">
+        <div class="header__switch">
+            <button class="header__switch-button"></button>
+            <div class="header__switch-button-text">Train</div>
+        </div>
+        <div class="start__switch hide">
+            <button class="start__switch-button"></button>
+            <div class="start__switch-button-text">Start</div>
+        </div>
+        </div>
+    </div>
+</header>
+<main id="main">
+    <aside class="aside"></aside>
+    <section id="pictures" class="pictures">
+    </section>
+    <section id="mark" class="mark-list"></section>
+</main>
+<footer class="footer"> <div>Klusovich Nikita gitHub: <a href="https://github.com/hlusovich">hlusovich</a>  last version 07.12.2020</div></footer>
+</body>
+<script src="classes/Model.js"></script>
+<script src="classes/resulView.js"></script>
+<script src="classes/CardsListView.js"></script>
+<script src="classes/MarkListView.js"></script>
+<script src="classes/Controller.js"></script>
+<script src="classes/AsideView.js"></script>
+<script>
+    const controller = new Controller();
+    controller.start();
+</script>
+</html>
